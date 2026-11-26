@@ -1,0 +1,18 @@
+FORMTEST PRO - GITHUB BROWSER UPLOAD
+
+1. Extract this ZIP on Windows.
+2. Open the extracted FormTestPro_GitHub_Ready folder.
+3. In File Explorer, enable View > Show > Hidden items so .github and .gitignore are visible.
+4. In your EMPTY GitHub repository, choose Add file > Upload files.
+5. Drag the FOLDERS themselves (src and .github) into the upload drop area. Do not open src and upload only its Java files; that loses the directory structure.
+6. Also drag the root files: pom.xml, testng.xml, README.md, SETUP_GUIDE.md, index.html, run_windows.bat, run_headless.bat, .gitignore and .nojekyll.
+7. Commit changes to main.
+
+Expected important paths:
+  src/test/java/com/formtestpro/base/DriverFactory.java
+  src/test/java/com/formtestpro/tests/InternalFormsTest.java
+  src/test/java/com/formtestpro/tests/ExternalWebsiteTest.java
+  src/test/resources/forms/*.html
+  .github/workflows/maven-tests.yml
+
+GitHub Pages serves only the static index.html dashboard. Java/Selenium tests run in GitHub Actions, not in GitHub Pages.
